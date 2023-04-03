@@ -6,7 +6,7 @@ import sys
 def factorize(num):
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            return i, num // i
+            return ((num // i), i)
     return None, None
 
 
